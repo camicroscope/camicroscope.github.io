@@ -69,7 +69,7 @@ h3 {
 .tm-video-container {
     position: relative;
     max-width: 1280px;
-    max-height: 640px;
+    max-height: 1000px;
     overflow-y: hidden;
 }
 
