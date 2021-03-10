@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>caMicroscope</title>
-<!--
+    <!--
 
 Timeless Template
 (stolen from)
@@ -16,64 +40,251 @@ http://www.templatemo.com/tm-517-timeless
 
 -->
     <!-- load CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"
+    />
     <!-- Google web font "Open Sans" -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- https://getbootstrap.com/ -->
-    <link rel="stylesheet" href="css/templatemo-style.css">
+    <!-- <link rel="stylesheet" href="css/templatemo-style.css" /> -->
     <!-- Templatemo style -->
-</head>
+  </head>
 
-<body>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <header class="text-center tm-site-header">
-                    <h1 class="pl-4 tm-site-title">caMicroscope</h1>
-                </header>
-            </div>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02"></div>
+    </nav>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col">
+        <a class="navbar-brand navbar__logo logo__color" href="#"
+          >caMicroscope</a
+        >
+      </div>
+      <div class="col"></div>
+      <div class="col">
+        <div class="navbar__menu__options">
+          <a href="#">About</a>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="tm-video-container">
-                  <img class="clips" src="img/Paint.gif"/>
-                  <img class="clips" src="img/Draw.gif"/>
-                  <img class="clips" src="img/Measure.gif"/>
-                  <img class="clips" src="img/Predict.gif"/>
-                </div>
-            </div>
+      </div>
+      <div class="col">
+        <div class="navbar__menu__options">
+          <a href="#">Feature</a>
         </div>
-        <div class="container tm-container-2">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="tm-welcome-text">Perform Perfect Pathology with caMicroscope</h2>
-                </div>
-            </div>
-            <!--  row -->
-            <hr>
-            <div class="row tm-section-mb tm-section-mt">
-                <div class="col-lg-4 col-md-4 col-sm-12 pr-lg-5 mb-md-0 mb-4">
-                    <h3 class="mt-2 mb-3 tm-text-gray">What is caMicroscope?</h3>
-                    <p>caMicroscope is a truly free scalable web-based biomedical image and data viewer, with strong emphasis for applications in cancer pathology. Try the <a href="https://wolf.cci.emory.edu//camic_org/">demo</a></p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 pr-lg-5 mb-md-0 mb-4">
-                    <h3 class="mt-2 mb-3 tm-text-gray">Using caMicroscope</h3>
-                    <p>caMicrosope aims to be easy-to-use. Nonetheless, the <a href="https://github.com/camicroscope/caMicroscope#user-guide">user-guide</a> may be helpful in unlocking the power of our advanced scientific tools.</p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <h3 class="mt-2 mb-3 tm-text-gray">Developing caMicroscope</h3>
-                    <p>caMicrosope is <a href="https://github.com/camicroscope/">open source</a>. Any help, questions, and suggestions help not only you, but the entire caMicroscope community. </p>
-                </div>
-            </div>
+      </div>
+      <div class="col">
+        <div class="navbar__menu__options">
+          <a href="#">Community</a>
         </div>
-        <hr>
+      </div>
+      <div class="col">
+        <div class="navbar__menu__options">
+          <a href="#">Github</a>
+        </div>
+      </div>
+      <div class="col"></div>
     </div>
-    <!-- .container -->
-
-    <script src="js/jquery.min.js"></script>
-    <!-- <script src="js/jquery-3.2.1.slim.min.js"></script> -->
-    <script src="js/templatemo-script.js"></script>
-
-</body>
+    <div class="section__header__main">
+      <p>
+        Perform Perfect Pathology with
+        <span class="logo__color">caMicroscope</span>
+      </p>
+      <p class="section__content__main">
+        caMicroscope is truly free, scalable web-based biomedical image and data
+        viewer, with strong emphasis for applications in cancer pathology.
+      </p>
+      <div style="margin-top: 12px">
+        <button class="section__button__colored">View Demo</button>
+        <button class="section__button__text">View Source</button>
+      </div>
+    </div>
+    <img
+      src="img/banner.png"
+      class="img-fluid banner__image__center"
+      alt="Responsive image"
+    />
+    <div class="section__header__main">
+      <p>
+        A perfect tool,
+        <span class="logo__color">for your Digital Pathology.</span>
+      </p>
+      <p class="section__content__main">
+        caMicroscope is a tool to view, annotate, and analyze biomedical images.
+        It is simple, easy-to-use free and fully open source. Use caMicroscope
+        to upload, mark, annotate and perform advanced scientific operations on
+        the biomedical slides.
+      </p>
+    </div>
+    <div style="margin-top: 98px">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="section__card__outline">
+              <img src="img/document.svg" class="section__card__icon" />
+              <div class="section__card__header">Annotate</div>
+              <div class="section__card__content">
+                <p>
+                  Annotate the slides. View, name and add notes about the
+                  annotation set.
+                </p>
+                <p>
+                  Can select, save annotations and set the panel to original
+                  state.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="section__card__outline">
+              <img src="img/Edit.svg" class="section__card__icon" />
+              <div class="section__card__header">Draw</div>
+              <div class="section__card__content">
+                <p>Draw thin lines, thick lines, or polygons on the image.</p>
+                <p>
+                  This helps to clearly show the markings in the slide for
+                  analysis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="section__card__outline">
+              <img src="img/Width.svg" class="section__card__icon" />
+              <div class="section__card__header">Measurement</div>
+              <div class="section__card__content">
+                <p>
+                  This tool helps to learn the measurements in micrometers on
+                  the slide.
+                </p>
+                <p>
+                  Also for flexibility, the magnifier tool is also provided.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="section__card__outline__none">
+              <div class="section__card__outline__none__header">
+                With caMicroscope one can...
+              </div>
+              <div class="section__card__outline__none__content">
+                <div>- Manage Layers</div>
+                <div>- Download and Upload Slides</div>
+                <div>- Mark slides as reviewed</div>
+                <div>- View side-by-side</div>
+                <div>
+                  - Supports variety of file formats such as .tiff, .svs, etc
+                </div>
+                <div>- Submit Bug Report</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="section__card__outline">
+              <img src="img/Tags.svg" class="section__card__icon" />
+              <div class="section__card__header">Label</div>
+              <div class="section__card__content">
+                <p>Can Draw circle or a rectangle around a tumor region.</p>
+                <p>
+                  Lets one to label the slides, download labels and also submit
+                  a bug report.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="section__card__outline">
+              <img src="img/AI.svg" class="section__card__icon" />
+              <div class="section__card__header">Model</div>
+              <div class="section__card__content">
+                <p>
+                  Using deep learning technology, results from a pre-trained
+                  tensorflow compatible model can be shown on a ROI of the
+                  slide..
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="section__card__outline">
+              <img src="img/Polyline.svg" class="section__card__icon" />
+              <div class="section__card__header">Segment</div>
+              <div class="section__card__content">
+                <p>
+                  Display, count, and export nuclear segmentations on the image.
+                </p>
+                <p>Useful to introspect the segmentations of the tumor.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="section__card__outline">
+              <img src="img/Share.svg" class="section__card__icon" />
+              <div class="section__card__header">Share View</div>
+              <div class="section__card__content">
+                <p>
+                  Share the presentation view via URL that can provide
+                  capability for multiple users to view the annotations,
+                  labellings in real time with the help of Shared View Feature..
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="section__card__outline">
+              <img src="img/Help.svg" class="section__card__icon" />
+              <div class="section__card__header">Tutorial</div>
+              <div class="section__card__content">
+                <p>
+                  A simple walkthrough tutorial of all the functionalities of
+                  the application is also provided for seamless user experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section__header__main">
+      <div>Join our <span class="logo__color">Community.</span></div>
+      <div class="section__content__main">
+        caMicrosope is open source software. Any help, questions, and
+        suggestions help not only you, but the entire caMicroscope community.
+        Get involved into development of the software by contributing your code
+        to any of the repositories of caMicroscope organization. Join and
+        interract with our active community on Slack, Google Groups and Github.
+      </div>
+      <div style="margin-top: 9px">
+        <img src="img/Google.svg" />
+        <img src="img/Slack.svg" />
+        <img src="img/GitHub.svg" />
+      </div>
+    </div>
+    <div class="footer__background__color">
+      <div style="margin: 30px">
+        <img src="img/Microscope.svg" />
+        <p class="footer__desc">
+          U24 CA18092401A1, Tools to Analyze Morphology and Spatially Mapped
+          Molecular Data
+        </p>
+      </div>
+      <div class="footer__content__copyright">
+        Copyright © 2021 caMicroscope
+      </div>
+    </div>
+  </body>
 </html>
