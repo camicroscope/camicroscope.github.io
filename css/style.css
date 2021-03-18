@@ -2,6 +2,14 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 .navbar__menu__options {
   padding-top: 17px;
   color: black;
@@ -19,6 +27,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 45px;
+  margin-left: 30px;
 }
 
 .section__header__main {
@@ -32,6 +41,7 @@ body {
 }
 
 .section__content__main {
+  margin: 0 20px;
   margin-top: 26px;
   font-weight: 400;
   font-size: 20px;
@@ -71,6 +81,7 @@ body {
   border-radius: 20px;
   box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
   height: 341px;
+  margin: 0 auto;
   margin-top: 50px;
 }
 
@@ -101,6 +112,7 @@ body {
   width: 309px;
   border-radius: 20px;
   height: 341px;
+  margin: 0 auto;
   margin-top: 40px;
 }
 
