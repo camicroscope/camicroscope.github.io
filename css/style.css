@@ -79,8 +79,12 @@ button:hover {
 .section__card__outline {
   width: 309px;
   border-radius: 20px;
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1); */
+
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
   height: 341px;
+  background-color: #ffffff;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -120,8 +124,9 @@ button:hover {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
+  padding: 0 10px;
   padding-top: 40px;
   color: #000000;
 }
@@ -130,8 +135,9 @@ button:hover {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
+  padding: 0 10px;
   padding-top: 20px;
   color: #4f5d75;
 }
