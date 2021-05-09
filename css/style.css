@@ -214,10 +214,20 @@ a {
     line-height: 15px;
     margin: 0 auto;
   }
+
+  .navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1;
+    margin-left: 0;
+  }
+
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 2.8125rem;
     flex-direction: column;
     width: 100%;
     text-align: center;
@@ -229,10 +239,11 @@ a {
 
   .nav-menu.active {
     left: 0;
+    background-color: #ffffff;
   }
 
   .nav-item {
-    margin: 25px 0;
+    margin: 0;
   }
 
   .hamburger {
