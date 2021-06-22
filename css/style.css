@@ -234,7 +234,7 @@ a {
     transition: 0.3s;
   }
   .hidden {
-    opacity: 0;
+    margin-top: 273px;
   }
 
   .nav-menu.active {
