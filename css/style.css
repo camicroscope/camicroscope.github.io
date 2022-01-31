@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -10,24 +16,58 @@ button:hover {
   cursor: pointer;
 }
 
-.navbar__menu__options {
-  padding-top: 17px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 50px;
+  padding-top: 7px;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 400;
   color: black;
 }
 
-.navbar__menu__options a {
-  color: black;
+.nav-logo {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  margin-left: 50px;
 }
-
 .logo__color {
   color: #9a2ca0;
 }
 
-.navbar__logo {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 45px;
-  margin-left: 30px;
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .section__header__main {
@@ -162,4 +202,70 @@ button:hover {
   padding-bottom: 20px;
   text-align: center;
   color: #ffffff;
+}
+.footer-logo {
+  padding: 50px;
+  margin: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-logo {
+    align-items: center;
+    line-height: 15px;
+    margin: 0 auto;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1;
+    margin-left: 0;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 2.8125rem;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .hidden {
+    margin-top: 273px;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    background-color: #ffffff;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .nav-logo {
+    font-size: 25px;
+    line-height: 10px;
+  }
 }
