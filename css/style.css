@@ -184,13 +184,12 @@ a {
 
 .footer__background__color {
   background-color: #9a2ca0;
-  margin-top: 80px;
 }
 
 .footer__desc {
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 50px;
   color: white;
-  width: 40%;
 }
 
 .footer__content__copyright {
@@ -204,8 +203,9 @@ a {
   color: #ffffff;
 }
 .footer-logo {
-  padding: 50px;
-  margin: 30px;
+  padding: 10px;
+  margin: 40px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
