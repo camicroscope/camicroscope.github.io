@@ -19,7 +19,7 @@ button:hover {
 .navbar {
   display: flex;
     justify-content: flex-start;
-    background-color: #d45bd4;
+    background-color: #d45bd4cc;
     color: white;
 }
 
@@ -59,7 +59,7 @@ button:hover {
   margin-left: 50px;
 }
 .logo__color {
-  color: #610e65;
+  color: #a81372;
 }
 
 li {
@@ -219,7 +219,7 @@ a {
     position: fixed;
     top: 0px;
     width: 100%;
-    background-color: #d45bd4;
+    background-color: #d45bd4cc;
     z-index: 1;
     margin-left: 0;
   }
