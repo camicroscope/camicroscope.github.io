@@ -187,11 +187,16 @@ a {
 }
 
 .footer__desc {
-  margin-top: 10px;
-  margin-bottom: 50px;
   color: white;
+    text-align: center;
 }
-
+.footer-image{
+  padding: 20px;
+    /* align-content: center; */
+    display: block;
+    margin: auto;
+    border-style: none;
+}
 .footer__content__copyright {
   font-family: Poppins;
   font-style: normal;
@@ -203,9 +208,11 @@ a {
   color: #ffffff;
 }
 .footer-logo {
-  padding: 10px;
-  margin: 40px;
-  text-align: center;
+  padding: 20px;
+  /* align-content: center; */
+  display: block;
+  margin: auto;
+  border-style: none;
 }
 
 @media only screen and (max-width: 768px) {
