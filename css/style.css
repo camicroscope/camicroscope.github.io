@@ -2,10 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+}
+
+.main-container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 a:hover {
@@ -20,7 +26,12 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 3rem;
+  position: sticky;
+  top: 0;
+  background: transparent;
+  backdrop-filter: blur(15px);
+  z-index: 99;
+  line-height: 20px;
 }
 
 .hamburger {
@@ -42,8 +53,8 @@ button:hover {
 }
 
 .nav-item {
-  margin-left: 50px;
-  padding-top: 7px;
+  margin-left: 5px;
+  margin-top: 15px;
 }
 
 .nav-link {
@@ -56,8 +67,8 @@ button:hover {
   font-weight: 700;
   font-size: 30px;
   line-height: 45px;
-  margin-left: 50px;
 }
+
 .logo__color {
   color: #9a2ca0;
 }
@@ -72,17 +83,18 @@ a {
 
 .section__header__main {
   text-align: center;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 90px;
   font-size: 45px;
   font-weight: 700;
   line-height: 67.5px;
 }
 
 .section__content__main {
+  text-align: center;
   margin: 0 20px;
-  margin-top: 26px;
+  margin-top: 2px;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
@@ -114,6 +126,7 @@ a {
   display: block;
   margin: 0 auto;
   padding-top: 100px;
+  margin-bottom: 125px;
 }
 
 .section__card__outline {
@@ -127,9 +140,17 @@ a {
   background-color: #ffffff;
   margin: 0 auto;
   margin-top: 50px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.section__card__outline:hover{
+  transform: scale(1.10);
+  transition: 0.2s ease-in-out;
 }
 
 .section__card__icon {
+  text-align: center;
   margin: 27px 32px;
 }
 
@@ -181,9 +202,17 @@ a {
   padding-top: 20px;
   color: #4f5d75;
 }
-
-.footer__background__color {
+ 
+.footer-container {
   background-color: #9a2ca0;
+}
+
+.footer-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__desc {
@@ -208,6 +237,16 @@ a {
   text-align: center;
 }
 
+.community {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 100px;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 67.5px;
+}
+
 @media only screen and (max-width: 768px) {
   .nav-logo {
     align-items: center;
@@ -219,8 +258,9 @@ a {
     position: fixed;
     top: 0px;
     width: 100%;
-    background-color: #ffffff;
-    z-index: 1;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    z-index: 99;
     margin-left: 0;
   }
 
