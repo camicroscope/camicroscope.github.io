@@ -18,9 +18,9 @@ button:hover {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 3rem;
+    justify-content: flex-start;
+    background-color: #d45bd4;
+    color: white;
 }
 
 .hamburger {
@@ -47,19 +47,19 @@ button:hover {
 }
 
 .nav-link {
-  font-size: 16px;
-  font-weight: 400;
-  color: black;
+  font-size: 20px;
+    font-weight: bold;
+    color: white;
 }
 
 .nav-logo {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 30px;
   line-height: 45px;
   margin-left: 50px;
 }
 .logo__color {
-  color: #9a2ca0;
+  color: #610e65;
 }
 
 li {
@@ -219,7 +219,7 @@ a {
     position: fixed;
     top: 0px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #d45bd4;
     z-index: 1;
     margin-left: 0;
   }
