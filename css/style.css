@@ -24,6 +24,7 @@ button:hover {
 
 .navbar {
   display: flex;
+  
   justify-content: space-between;
   align-items: center;
   position: sticky;
@@ -53,6 +54,7 @@ button:hover {
 }
 
 .nav-item {
+  isolation: isolate;
   margin-left: 5px;
   margin-top: 15px;
 }
@@ -70,7 +72,9 @@ button:hover {
 }
 
 .logo__color {
+  isolation: isolate;
   color: #9a2ca0;
+ 
 }
 
 li {
@@ -102,6 +106,7 @@ a {
 }
 
 .section__button__colored {
+  isolation: isolate;
   background-color: #9a2ca0;
   font-weight: 500;
   font-size: 20px;
@@ -204,6 +209,7 @@ a {
 }
  
 .footer-container {
+  isolation: isolate;
   background-color: #9a2ca0;
 }
 
@@ -308,4 +314,119 @@ a {
     font-size: 25px;
     line-height: 10px;
   }
+}
+
+
+
+
+
+
+
+#switch{
+  filter:invert(1);
+  width:30px;
+  cursor: pointer;
+}
+
+.darkmode--activated .nav-link{
+  color:white;
+}
+
+
+
+
+
+
+
+
+
+
+.darkmode--activated .navbar{
+
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #16161654;
+    /* background: transparent; */
+    backdrop-filter: blur(15px);
+    z-index: 99;
+    line-height: 20px;
+    z-index: 4;
+
+}
+.darkmode--activated .nav-link{
+  font-size: 16px;
+    font-weight: 400;
+    color: #fff8f8;
+    z-index: 4;
+}
+.darkmode--activated .body{
+  background-color: #7e6e6ee0;
+  z-index: 4;
+}
+
+
+.darkmode--activated .section-card-outline{
+  width: 309px;
+    border-radius: 20px;
+    /* box-shadow: 3px 3px 4px rgb(0 0 0 / 10%); */
+    box-shadow: rgb(17 17 26 / 5%) 0px 1px 0px, rgb(17 17 26 / 10%) 0px 0px 8px;
+    height: 341px;
+    background-color: #5e5359a1;
+    margin: 0 auto;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+  
+}
+#image{
+  z-index: -1;
+}
+.darkmode--activated .img {
+  filter: contrast(0);
+  filter: invert(1);
+  vertical-align: middle;
+  z-index: 4;
+  border-style: none;
+}
+.darkmode--activated .section__card__content {
+  margin: 12px 33px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  z-index: 4;
+  line-height: 27px;
+  color: #000000;
+}
+
+
+.darkmode--activated .footer-content{
+
+  background: #16161654;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+    justify-content: center;
+    align-items: center;
+}
+
+.darkmode--activated .footer__content__copyright {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+  background: #40404021;
+  
+}
+.darkmode-layer, .darkmode-toggle {
+  z-index: 0;
 }
