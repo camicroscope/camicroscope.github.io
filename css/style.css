@@ -101,6 +101,16 @@ a {
   color: #4f5d75;
 }
 
+.section__content__points{
+  margin: 0 20px;
+  margin-top: 2px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #4f5d75;
+  text-align:left;
+}
+
 .section__button__colored {
   background-color: #9a2ca0;
   font-weight: 500;
@@ -110,6 +120,7 @@ a {
   color: white;
   padding: 8px 15px;
   border: 1px solid #9a2ca0;
+  margin-bottom: 10px;
 }
 
 .section__button__text {
