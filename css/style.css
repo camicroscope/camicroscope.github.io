@@ -102,7 +102,7 @@ a {
 }
 
 .section__button__colored {
-  background-color: #9a2ca0;
+  background-color:#000000 ;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
@@ -110,6 +110,13 @@ a {
   color: white;
   padding: 8px 15px;
   border: 1px solid #9a2ca0;
+}
+
+.section__button__colored:hover {
+  transform: scale(1.30);
+  transition:0.2s ease-in-out;
+  margin-top: -20px;
+  background-color: #9a2ca0;
 }
 
 .section__button__text {
@@ -146,7 +153,9 @@ a {
 
 .section__card__outline:hover{
   transform: scale(1.10);
-  transition: 0.2s ease-in-out;
+  transition:0.2s ease-in-out;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 
 .section__card__icon {
@@ -246,6 +255,8 @@ a {
   font-weight: 700;
   line-height: 67.5px;
 }
+
+
 
 @media only screen and (max-width: 768px) {
   .nav-logo {
