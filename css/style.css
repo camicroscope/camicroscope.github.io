@@ -141,7 +141,6 @@ a {
   margin: 0 auto;
   margin-top: 50px;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
 }
 
 .section__card__outline:hover{
@@ -152,6 +151,8 @@ a {
 .section__card__icon {
   text-align: center;
   margin: 27px 32px;
+  text-align: center;
+  margin-left:130px;
 }
 
 .section__card__header {
@@ -160,6 +161,7 @@ a {
   line-height: 37px;
   color: #9a2ca0;
   margin: 0 32px;
+  text-align: center;
 }
 
 .section__card__content {
