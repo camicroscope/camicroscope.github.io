@@ -73,7 +73,7 @@ button:hover {
   color: #9a2ca0;
 }
 
-li {
+.nav-item{
   list-style: none;
 }
 
@@ -104,13 +104,19 @@ a {
 .section__button__colored {
   background-color: #9a2ca0;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 50px;
   line-height: 30px;
   border-radius: 100px;
   color: white;
-  padding: 8px 15px;
+  padding: 15px 20px;
   border: 1px solid #9a2ca0;
 }
+
+
+.section__button__colored:hover {
+  background-color: #d720e1 !important;
+}
+
 
 .section__button__text {
   font-weight: 500;
