@@ -82,23 +82,23 @@ a {
 }
 
 .section__header__main {
-  text-align: center;
   max-width: 800px;
   margin: 0 auto;
   margin-top: 90px;
   font-size: 45px;
   font-weight: 700;
   line-height: 67.5px;
+  margin-bottom: 10px;
 }
 
 .section__content__main {
-  text-align: center;
   margin: 0 20px;
   margin-top: 2px;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   color: #4f5d75;
+  margin-bottom: 20px;
 }
 
 .section__button__colored {
