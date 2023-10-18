@@ -104,11 +104,12 @@ a {
 .section__button__colored {
   background-color: #9a2ca0;
   font-weight: 500;
-  font-size: 50px;
+  font-size: 35px;
   line-height: 30px;
-  border-radius: 100px;
+  border-radius: 15px;
+  margin: 20px;
   color: white;
-  padding: 15px 20px;
+  padding: 25px 25px;
   border: 1px solid #9a2ca0;
 }
 
@@ -131,7 +132,7 @@ a {
 .banner__image__center {
   display: block;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 20px;
   margin-bottom: 125px;
 }
 
@@ -210,7 +211,7 @@ a {
 }
  
 .footer-container {
-  background-color: #9a2ca0;
+  background-color: #24A9F6;
 }
 
 .footer-content {
