@@ -315,3 +315,7 @@ a {
     line-height: 10px;
   }
 }
+
+.logo{
+  filter: invert(88%) sepia(71%) saturate(587%) hue-rotate(327deg) brightness(103%) contrast(106%);
+}
