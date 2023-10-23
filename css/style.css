@@ -319,3 +319,7 @@ a {
 .logo{
   filter: invert(88%) sepia(71%) saturate(587%) hue-rotate(327deg) brightness(103%) contrast(106%);
 }
+
+.regular_list{
+  font-size: 14px;
+}

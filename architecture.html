@@ -83,36 +83,24 @@ http://www.templatemo.com/tm-517-timeless
     <section class="community">
     <div class="section__header__main" id="features">
       <p>
-        Join the
-        <span class="logo__color">caMicroscope community.</span>
+        Overview of
+        <span class="logo__color">caMicroscope's architecture.</span>
       </p>
       <p class="section__content__main">
-        caMicroscope is open source software. Much of its development has been ad-hoc towards particular project needs. Thanks to community support, caMicroscope is able to be a general tool, in addition to these specific use cases.
+        <b>Component Services</b><br/><br/>
+          <b>mongo</b> - vanilla mongo container<br/>
+          <b>idxMongo</b> - ephemeral container to index mongo (that is, this container is expected to exit once it's done its job)<br/>
+          <b>iip</b> - slide tile server (see https://github.com/camicroscope/iipImage)<br/>
+          <b>loader</b> - extracts metadata needed for image loading (see https://github.com/camicroscope/SlideLoader)</br>
+          <b>back</b>- security, data, and routing (see https://github.com/camicroscope/caracal)<br/>
+          <b>viewer</b> - within back, viewer files ( see https://github.com/camicroscope/caMicroscope)
+        </ul>
       </p>
       <p class="section__content__main">
-        The clearest and most structured way in which the community supports caMicroscope's and its scientific missions is through <a href="https://summerofcode.withgoogle.com/">Google Summer of Code (GSOC)</a>. This program allows for contributors to recieve a stipend and formal acknowledgment for open source contributions.
+        See the component map to understand these services in more detail.
+        <div id="componentMap" style="width: 500px; height:500px;">
+        </div>
       </p>
-      <p class="section__content__main">
-        caMicroscope can be a difficult project to onboard onto. Since it is a distributed platform, development of the components occurs in different repositories. The best starting place is the <a href="https://github.com/camicroscope/distro">distribution repository</a>, which has a docker-compose container manifest for comparatively easy deployment of the platform all at once. For development purposes, we have a special manifest, develop.yml, which disables some security features, and uses edge code. From there, use the UI, which detaults to port 4010) to load an image.
-      </p>
-      <p class="section__content__main">
-        We Use <a href="https://guides.github.com/introduction/flow/index.html">Github Flow</a>, So All Code Changes Happen Through Pull Requests. Pull requests are the best way to propose changes to the codebase. We actively welcome your pull requests. We do not typically assign pull requests without a reason why a particular person should do the work.
-      </p>
-      <p class="section__content__main">
-        As a general a open source quality of life improvement, we recommend working on topic branches off of your fork, and keeping your master/develop up to date with the upstream repositories. There's <a href="https://gist.github.com/anjohnson/8994c95ab2a06f7d2339">a guide to triangle workflows</a> which may be helpful for using git this way.
-      </p>
-      <p class="section__content__main">
-      Issues and pull requests should be against the most relevant repository (i.e. where the change would take place).
-      <b>Great Bug Reports</b> tend to have:<br/>
-      A quick summary and/or background<br/>
-        &bull; Steps to reproduce; Be specific and Give sample code if you can.<br/>
-        &bull; What you expected would happen.<br/>
-        &bull; What actually happens.<br/>
-        &bull; If applicable, add screenshots to help explain your problem.<br/>
-        &bull; State the device, platform and versions you are running on.<br/>
-        &bull; Notes (possibly including why you think this might be happening, or stuff you tried that didn't work).<br/>
-      </p>
-      <br/><br/>
     </div>
     </section>
 
@@ -124,5 +112,17 @@ http://www.templatemo.com/tm-517-timeless
     </div>
     <script src="/js/navbar-responsive.js"></script>
     <script src="/js/footer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/openseadragon@4.1/build/openseadragon/openseadragon.min.js"></script>
+    <script type="text/javascript">
+            OpenSeadragon({
+                id:            "componentMap",
+                prefixUrl:     "https://cdn.jsdelivr.net/npm/openseadragon@4.1/build/openseadragon/images/",
+                tileSources:   {
+                    type: 'image',
+                    url:  '/img/componentMap.png'
+                }
+            });
+        </script>
+      </script>
   </body>
 </html>
