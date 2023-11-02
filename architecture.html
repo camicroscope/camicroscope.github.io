@@ -80,21 +80,21 @@ http://www.templatemo.com/tm-517-timeless
       </div>
     </nav>
 
-    <section class="community">
+    <section class="architecture">
     <div class="section__header__main" id="features">
       <p>
         Overview of
         <span class="logo__color">caMicroscope's architecture.</span>
       </p>
       <p class="section__content__main">
-        <b>Component Services</b><br/><br/>
-          <b>mongo</b> - vanilla mongo container<br/>
-          <b>idxMongo</b> - ephemeral container to index mongo (that is, this container is expected to exit once it's done its job)<br/>
-          <b>iip</b> - slide tile server (see https://github.com/camicroscope/iipImage)<br/>
-          <b>loader</b> - extracts metadata needed for image loading (see https://github.com/camicroscope/SlideLoader)</br>
-          <b>back</b>- security, data, and routing (see https://github.com/camicroscope/caracal)<br/>
-          <b>viewer</b> - within back, viewer files ( see https://github.com/camicroscope/caMicroscope)
-        </ul>
+        caMicroscope is a series of services organized in a <a href="https://github.com/camicroscope/Distro/blob/master/caMicroscope.yml">docker-compose file</a> or kubernetes deployment. </br>
+      </br>
+        Most data is stored in <b>mongo</b> by default in a database named "camic".</br>
+        The image data is stored in the filesystem and tiles are served by the <b>iip</b> microservice <a href="https://github.com/camicroscope/iipImage" target="_blank">(source).</a></br>
+        WSI metadata extraction is accomplished both as a service and as a series of scripts by the <b>loader</b> service <a href="https://github.com/camicroscope/SlideLoader" target="_blank">(source).</a></br>
+        A special version of the orthanc <b>dicom server</b> may be used to load DICOM images as well <a href="https://github.com/camicroscope/dicomsrv" target="_blank">(source).</a></br>
+        The API microservice, proxying to the other services, and basic security are handled by the backend <b>caracal</b> service <a href="https://github.com/camicroscope/caracal" target="_blank">(source).</a><br/>
+        Finally, the <b>viewer</b> is also hosted by caracal, and handles user interaction, and is the core of the project <a href="https://github.com/camicroscope/caMicroscope" target="_blank">(source).</a><br/>
       </p>
       <p class="section__content__main">
         See the component map to understand these services in more detail.
