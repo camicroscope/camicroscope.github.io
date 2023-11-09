@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -28,16 +27,26 @@ http://www.templatemo.com/tm-517-timeless
     <!-- https://getbootstrap.com/ -->
     <!-- <link rel="stylesheet" href="css/templatemo-style.css" /> -->
     <!-- Templatemo style -->
-</head>
-
-<body style="background-color: #fcfcfc">
+  </head>
+  <body style="background-color: #fcfcfc">
     <nav class="navbar">
-        <div class="container">
-            <a href="./index.html" class="nav-logo logo__color">caMicroscope</a>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="./index.html" class="nav-link">About</a
-            >
+      <div class="container">
+        <a href="#" class="nav-logo logo__color">caMicroscope</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="https://wolf.cci.emory.edu/camic_org/apps/viewer/viewer.html?slideId=6452b9c306fce90019f5f447" target="_blank" class="nav-link">Live Demo</a>
+          </li>
+          <li class="nav-item">
+            <a href="http://camicroscope.github.io/docs" class="nav-link">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contributing.html" class="nav-link">Contributing</a>
+          </li>
+          <li class="nav-item">
+            <a href="./community.html" class="nav-link">Community</a>
+          </li>
+          <li class="nav-item">
+            <a href="./architecture.html" class="nav-link">Architecture</a>
           </li>
           <li class="nav-item">
             <a
@@ -54,92 +63,120 @@ http://www.templatemo.com/tm-517-timeless
         </div>
       </div>
     </nav>
-
     <section class="community">
-      <p>
-        Get Started
-        <span class="logo__color">contributing to caMicroscope</span>
+      <p> Get Started <span class="logo__color">contributing to caMicroscope</span>
       </p>
-    <div class="section__content__main" id="contributing">
-      <p>caMicroscope is an open-source distributed platform, and we welcome contributions from the community. Before you start contributing, here are some important guidelines and information to help you get involved.</p>
-<h3 id="getting-started">Getting Started</h3>
-<ol>
-<li><p><strong>Code Repository:</strong> Our development occurs in various repositories. The best place to start is the distribution repository, which contains a docker-compose container manifest for easy platform deployment. For development purposes, we also provide a special manifest, <code>develop.yml</code>, which disables some security features and uses edge code.</p>
-</li>
-<li><p><strong>Using the UI:</strong> You can interact with caMicroscope through the user interface, which defaults to port 4010. Use this UI to load and explore images.</p>
-</li>
-</ol>
-<h3 id="development-workflow">Development Workflow</h3>
-<p>We follow the <a href="https://guides.github.com/introduction/flow/">GitHub Flow</a> for code changes, which means all changes happen through pull requests. Here&#39;s a step-by-step guide to our development process:</p>
-                    <ol>
-                        <li>
-                            <p><strong>Fork the Repository:</strong> To get started, fork the repository you want to contribute to. This will create a copy in your own GitHub account.</p>
-                        </li>
-                        <li>
-                            <p><strong>Create a Branch:</strong> For each contribution, create a new branch from the main repository. Use a descriptive name that explains your change.</p>
-                        </li>
-                        <li>
-                            <p><strong>Make Changes:</strong> Make the necessary code changes, following our coding standards and guidelines.</p>
-                        </li>
-                        <li>
-                            <p><strong>Testing:</strong> Ensure your changes are thoroughly tested. Provide test cases if applicable.</p>
-                        </li>
-                        <li>
-                            <p><strong>Create a Pull Request:</strong> Once your changes are ready, open a pull request against the original repository&#39;s main branch. Write a clear description of the changes you&#39;ve made.</p>
-                        </li>
-                        <li>
-                            <p><strong>Code Review:</strong> Our team will review your pull request. Be prepared to address feedback and make necessary adjustments.</p>
-                        </li>
-                        <li>
-                            <p><strong>Merge:</strong> Once your pull request is approved, it will be merged into the main repository.</p>
-                        </li>
-                    </ol>
-                    <p>We actively welcome your pull requests. However, we do not typically assign pull requests without a clear reason for a specific person to work on them.</p>
-                    <h3 id="best-practices">Best Practices</h3>
-                    <p>To make your contribution process smoother, consider working on topic branches from your fork of the repository. Keep your master or develop branch up-to-date with the upstream repositories. You can refer to the <a href="https://gist.github.com/anjohnson/8994c95ab2a06f7d2339">Triangle Workflows Guide</a> for guidance on using Git this way.</p>
-                    <h3 id="reporting-issues">Reporting Issues</h3>
-                    <p>If you encounter issues, create issues and pull requests against the most relevant repository where the change should take place. Reporting issues effectively helps us improve caMicroscope. When submitting a bug report, provide as much detail as possible:</p>
-                    <ul>
-                        <li>A quick summary and/or background.</li>
-                        <li>Clear steps to reproduce the issue. Be specific and provide sample code if you can.</li>
-                        <li>Describe what you expected to happen.</li>
-                        <li>Explain what actually happened.</li>
-                        <li>Include screenshots if they can help illustrate the problem.</li>
-                        <li>State the device, platform, and versions you are using.</li>
-                        <li>Share any relevant notes, including why you think the issue might be happening or any attempts you made to resolve it.</li>
-                    </ul>
-                    <h3 id="reporting-issues">Requesting Features</h3>
-                    <p>If you have ideas for new features or improvements to caMicroscope, we encourage you to propose them. Clear and well-documented feature proposals help us understand your vision and make informed decisions. When proposing a new feature, follow these guidelines:</p>
-                    <ul>
-                      <li><strong>Summary:</strong> Provide a concise summary of the feature or improvement you want to propose.</li>
-                      <li><strong>Background:</strong> Include background information explaining why this feature is valuable or necessary.</li>
-                      <li><strong>Use Cases:</strong> Describe the use cases for this feature, detailing how it benefits users.</li>
-                      <li><strong>Implementation:</strong> If you have ideas on how to implement the feature, share them here. This could include code snippets, architecture diagrams, or any technical details.</li>
-                      <li><strong>Expected Impact:</strong> Explain the expected impact of this feature on the caMicroscope platform and its users.</li>
-                      <li><strong>Additional Notes:</strong> Any additional context, information, or references that can support your proposal.</li>
-                    </ul>
-                    <h3 id="contribution-guidelines">Contribution Guidelines</h3>
-                    <p>To ensure that your contributions align with our project&#39;s goals and meet our standards, please review our <a href="./community.html">community guide</a>. These guidelines cover topics like coding standards, testing, and the review process.</p>
-                    <h3 id="code-of-conduct">Code of Conduct</h3>
-                    <p>We have a Code of Conduct in place to create a respectful and inclusive environment for all contributors. Please read and adhere to the <a href="./conduct.html">Code of Conduct</a> when participating in caMicroscope development.</p>
-                    <h3 id="licensing">Licensing</h3>
-                    <p>caMicroscope is licensed under the open source <a href="https://github.com/camicroscope/caMicroscope/blob/master/LICENSE">BSD 3-Clause License</a> unless otherwise specified in a repository, and contributions are subject to the same license terms. Make sure you are comfortable with the licensing terms before contributing.</p>
-                    <h3 id="recognition">Recognition</h3>
-                    <p>We appreciate and recognize the contributions of our community members. Notable contributors may be acknowledged on our website or in project documentation.</p>
-                    <p>Thank you for considering contributing to caMicroscope. Your contributions are valuable and help advance our mission in medical research. If you have any questions or need assistance, feel free to reach out to our <a href="mailto:camicroscope@googlegroups.com">community group</a>.</p>
-                    <p>We look forward to working with you!</p>
-                    <br/><br/>
-        </div>
-        </section>
-
-        <div class="footer-container">
-            <div class="footer-content">
-                <img src="img/CamicLogo.svg" class="logo" style="width:100px; height:100px;" />
-            </div>
-            <div class="footer__content__copyright"></div>
-        </div>
-        <script src="/js/navbar-responsive.js"></script>
-        <script src="/js/footer.js"></script>
-</body>
-
+      <div class="section__content__main" id="contributing">
+        <p>caMicroscope is an open-source distributed platform, and we welcome contributions from the community. Before you start contributing, here are some important guidelines and information to help you get involved.</p>
+        <h3 id="getting-started">Getting Started</h3>
+        <ol>
+          <li>
+            <p>
+              <strong>Code Repository:</strong> Our development occurs in various repositories. The best place to start is the distribution repository, which contains a docker-compose container manifest for easy platform deployment. For development purposes, we also provide a special manifest, <code>develop.yml</code>, which disables some security features and uses edge code.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Using the UI:</strong> You can interact with caMicroscope through the user interface, which defaults to port 4010. Use this UI to load and explore images.
+            </p>
+          </li>
+        </ol>
+        <h3 id="development-workflow">Development Workflow</h3>
+        <p>We follow the <a href="https://guides.github.com/introduction/flow/">GitHub Flow</a> for code changes, which means all changes happen through pull requests. Here&#39;s a step-by-step guide to our development process: </p>
+        <ol>
+          <li>
+            <p>
+              <strong>Fork the Repository:</strong> To get started, fork the repository you want to contribute to. This will create a copy in your own GitHub account.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Create a Branch:</strong> For each contribution, create a new branch from the main repository. Use a descriptive name that explains your change.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Make Changes:</strong> Make the necessary code changes, following our coding standards and guidelines.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Testing:</strong> Ensure your changes are thoroughly tested. Provide test cases if applicable.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Create a Pull Request:</strong> Once your changes are ready, open a pull request against the original repository&#39;s main branch. Write a clear description of the changes you&#39;ve made.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Code Review:</strong> Our team will review your pull request. Be prepared to address feedback and make necessary adjustments.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Merge:</strong> Once your pull request is approved, it will be merged into the main repository.
+            </p>
+          </li>
+        </ol>
+        <p>We actively welcome your pull requests. However, we do not typically assign pull requests without a clear reason for a specific person to work on them.</p>
+        <h3 id="best-practices">Best Practices</h3>
+        <p>To make your contribution process smoother, consider working on topic branches from your fork of the repository. Keep your master or develop branch up-to-date with the upstream repositories. You can refer to the <a href="https://gist.github.com/anjohnson/8994c95ab2a06f7d2339">Triangle Workflows Guide</a> for guidance on using Git this way. </p>
+        <h3 id="reporting-issues">Reporting Issues</h3>
+        <p>If you encounter issues, create issues and pull requests against the most relevant repository where the change should take place. Reporting issues effectively helps us improve caMicroscope. When submitting a bug report, provide as much detail as possible:</p>
+        <ul>
+          <li>A quick summary and/or background.</li>
+          <li>Clear steps to reproduce the issue. Be specific and provide sample code if you can.</li>
+          <li>Describe what you expected to happen.</li>
+          <li>Explain what actually happened.</li>
+          <li>Include screenshots if they can help illustrate the problem.</li>
+          <li>State the device, platform, and versions you are using.</li>
+          <li>Share any relevant notes, including why you think the issue might be happening or any attempts you made to resolve it.</li>
+        </ul>
+        <h3 id="reporting-issues">Requesting Features</h3>
+        <p>If you have ideas for new features or improvements to caMicroscope, we encourage you to propose them. Clear and well-documented feature proposals help us understand your vision and make informed decisions. When proposing a new feature, follow these guidelines:</p>
+        <ul>
+          <li>
+            <strong>Summary:</strong> Provide a concise summary of the feature or improvement you want to propose.
+          </li>
+          <li>
+            <strong>Background:</strong> Include background information explaining why this feature is valuable or necessary.
+          </li>
+          <li>
+            <strong>Use Cases:</strong> Describe the use cases for this feature, detailing how it benefits users.
+          </li>
+          <li>
+            <strong>Implementation:</strong> If you have ideas on how to implement the feature, share them here. This could include code snippets, architecture diagrams, or any technical details.
+          </li>
+          <li>
+            <strong>Expected Impact:</strong> Explain the expected impact of this feature on the caMicroscope platform and its users.
+          </li>
+          <li>
+            <strong>Additional Notes:</strong> Any additional context, information, or references that can support your proposal.
+          </li>
+        </ul>
+        <h3 id="contribution-guidelines">Contribution Guidelines</h3>
+        <p>To ensure that your contributions align with our project&#39;s goals and meet our standards, please review our <a href="./community.html">community guide</a>. These guidelines cover topics like coding standards, testing, and the review process. </p>
+        <h3 id="code-of-conduct">Code of Conduct</h3>
+        <p>We have a Code of Conduct in place to create a respectful and inclusive environment for all contributors. Please read and adhere to the <a href="./conduct.html">Code of Conduct</a> when participating in caMicroscope development. </p>
+        <h3 id="licensing">Licensing</h3>
+        <p>caMicroscope is licensed under the open source <a href="https://github.com/camicroscope/caMicroscope/blob/master/LICENSE">BSD 3-Clause License</a> unless otherwise specified in a repository, and contributions are subject to the same license terms. Make sure you are comfortable with the licensing terms before contributing. </p>
+        <h3 id="recognition">Recognition</h3>
+        <p>We appreciate and recognize the contributions of our community members. Notable contributors may be acknowledged on our website or in project documentation.</p>
+        <p>Thank you for considering contributing to caMicroscope. Your contributions are valuable and help advance our mission in medical research. If you have any questions or need assistance, feel free to reach out to our <a href="mailto:camicroscope@googlegroups.com">community group</a>. </p>
+        <p>We look forward to working with you!</p>
+        <br />
+        <br />
+      </div>
+    </section>
+    <div class="footer-container">
+      <div class="footer-content">
+        <img src="img/CamicLogo.svg" class="logo" style="width:100px; height:100px;" />
+      </div>
+      <div class="footer__content__copyright"></div>
+    </div>
+    <script src="/js/navbar-responsive.js"></script>
+    <script src="/js/footer.js"></script>
+  </body>
 </html>
