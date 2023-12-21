@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -88,12 +90,28 @@ http://www.templatemo.com/tm-517-timeless
         </div>
       </div>
     </nav>
-    <img
-      src="img/banner1.jpg"
-      class="img-fluid banner__image__center"
-      alt="Responsive image"
-    />
-
+    <div id="banner" class="banner">
+      <div id="slider" class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/banner.png">
+          </div>
+          <div class="swiper-slide" >
+            <img src="img/banner1.jpg" >              
+            </div>
+          </div>
+          </div>
+        </div>
+    
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    
+    
     <div class="section__header__main" id="features">
       <p>
         A perfect tool,
@@ -276,5 +294,27 @@ http://www.templatemo.com/tm-517-timeless
     </div>
     <script src="/js/navbar-responsive.js"></script>
     <script src="/js/footer.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+  
+        var mySwiper = new Swiper(".swiper-container", {
+          // Optional parameters
+          direction: "horizontal",
+          loop: true,
+  
+          // If we need pagination
+          pagination: {
+            el: ".swiper-pagination",
+          },
+  
+          // Navigation arrows
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      });
+    </script>
   </body>
 </html>
