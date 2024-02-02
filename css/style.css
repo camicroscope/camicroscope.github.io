@@ -323,3 +323,68 @@ a {
 .regular_list{
   font-size: 14px;
 }
+/* Add your styling for the banner and slider here */
+.banner {
+  position: relative;
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto;
+  overflow: hidden;
+  max-height: 400px; /* Set the maximum height of your banner */
+}
+
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.swiper-slide {
+  width: 100%; 
+  height: 300px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s ease;
+  margin-right: 10px; 
+  cursor: pointer;
+  overflow:hidden;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+}
+.swiper-slide:hover {
+  transform: scale(1.1); 
+}
+.swiper-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: background 0.3s ease; 
+  z-index: 1;
+  opacity: 0; 
+}
+.swiper-slide:hover::before {
+  opacity: 1;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index:10;
+}
+.swiper-button-next {
+ margin-right: 10%;
+}
+.swiper-button-prev {
+  margin-left: 10%;  
+}
+.swiper-pagination-bullet {
+  background-color: #fff; 
+}
+
