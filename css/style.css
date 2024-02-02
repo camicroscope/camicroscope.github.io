@@ -81,17 +81,17 @@ a {
   text-decoration: none;
 }
 
-.section__header__main {
+.section_header_main {
   max-width: 800px;
   margin: 0 auto;
-  margin-top: 90px;
+  margin-top: 60px;
   font-size: 45px;
   font-weight: 700;
   line-height: 67.5px;
   margin-bottom: 10px;
 }
 
-.section__content__main {
+.section_content_main {
   margin: 0 20px;
   margin-top: 2px;
   font-weight: 400;
@@ -101,10 +101,10 @@ a {
   margin-bottom: 20px;
 }
 
-.section__button__colored {
+.section_button_colored {
   background-color: #9a2ca0;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 30px;
   border-radius: 15px;
   margin: 20px;
@@ -114,12 +114,12 @@ a {
 }
 
 
-.section__button__colored:hover {
+.section_button_colored:hover {
   background-color: #d720e1 !important;
 }
 
 
-.section__button__text {
+.section_button_text {
   font-weight: 500;
   color: #4f5d75;
   font-size: 20px;
@@ -129,14 +129,14 @@ a {
   margin-left: 22px;
 }
 
-.banner__image__center {
+.banner_image_center {
   display: block;
   margin: 0 auto;
   padding-top: 20px;
   margin-bottom: 125px;
 }
 
-.section__card__outline {
+.section_card_outline {
   width: 309px;
   border-radius: 20px;
   /* box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1); */
@@ -151,17 +151,17 @@ a {
   transition: 0.2s ease-in-out;
 }
 
-.section__card__outline:hover{
+.section_card_outline:hover{
   transform: scale(1.10);
   transition: 0.2s ease-in-out;
 }
 
-.section__card__icon {
+.section_card_icon {
   text-align: center;
   margin: 27px 32px;
 }
 
-.section__card__header {
+.section_card_header {
   font-weight: bold;
   font-size: 25px;
   line-height: 37px;
@@ -169,7 +169,7 @@ a {
   margin: 0 32px;
 }
 
-.section__card__content {
+.section_card_content {
   margin: 12px 33px;
   font-family: Poppins;
   font-style: normal;
@@ -180,7 +180,7 @@ a {
   color: #4f5d75;
 }
 
-.section__card__outline__none {
+.section_cardoutline_none {
   width: 309px;
   border-radius: 20px;
   height: 341px;
@@ -188,7 +188,7 @@ a {
   margin-top: 40px;
 }
 
-.section__card__outline__none__header {
+.section_cardoutlinenone_header {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -199,7 +199,7 @@ a {
   color: #000000;
 }
 
-.section__card__outline__none__content {
+.section_cardoutlinenone_content {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -228,7 +228,7 @@ a {
   color: white;
 }
 
-.footer__content__copyright {
+.footer_content_copyright {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
@@ -322,4 +322,11 @@ a {
 
 .regular_list{
   font-size: 14px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
