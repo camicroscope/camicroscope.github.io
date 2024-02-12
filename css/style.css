@@ -105,17 +105,24 @@ a {
   background-color: #9a2ca0;
   font-weight: 500;
   font-size: 35px;
-  line-height: 30px;
+  line-height: 32px;
   border-radius: 15px;
-  margin: 20px;
+  text-align: left;
   color: white;
-  padding: 25px 25px;
-  border: 1px solid #9a2ca0;
+  padding: 20px;
+  overflow: hidden;
+  position:static;
 }
-
+ 
+  
 
 .section__button__colored:hover {
-  background-color: #d720e1 !important;
+  color:#9a2ca0 !important;
+  background-color: white;
+  background: transparent;
+    border: 1px solid #9a2ca0;
+    transition: all 1s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 
@@ -281,6 +288,9 @@ a {
   }
   .hidden {
     margin-top: 273px;
+  }
+  .section__button__colored{
+    margin:20px;
   }
 
   .nav-menu.active {
