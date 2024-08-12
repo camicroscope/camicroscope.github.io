@@ -17,8 +17,11 @@ body {
 a:hover {
   text-decoration: none;
 }
-
+.button{
+  display: flex;
+}
 button:hover {
+
   cursor: pointer;
 }
 
@@ -104,7 +107,7 @@ a {
 .section__button__colored {
   background-color: #9a2ca0;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 30px;
   border-radius: 15px;
   margin: 20px;
