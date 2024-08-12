@@ -18,7 +18,12 @@ a:hover {
   text-decoration: none;
 }
 
+.button{
+  display: flex;
+  flex-direction: column;
+}
 button:hover {
+
   cursor: pointer;
 }
 
@@ -104,7 +109,7 @@ a {
 .section__button__colored {
   background-color: #9a2ca0;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 1.5rem;
   line-height: 30px;
   border-radius: 15px;
   margin: 20px;
@@ -122,7 +127,7 @@ a {
 .section__button__text {
   font-weight: 500;
   color: #4f5d75;
-  font-size: 20px;
+  font-size: 2.0rem;
   line-height: 30px;
   background-color: white;
   border: none;
