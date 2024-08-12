@@ -17,10 +17,10 @@ body {
 a:hover {
   text-decoration: none;
 }
+
 .button{
   display: flex;
   flex-direction: column;
-
 }
 button:hover {
 
