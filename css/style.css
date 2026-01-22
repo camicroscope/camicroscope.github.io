@@ -70,7 +70,7 @@ button:hover {
 }
 
 .logo__color {
-  color: #9a2ca0;
+  color:  #24A9F6;
 }
 
 .nav-item{
@@ -102,7 +102,7 @@ a {
 }
 
 .section__button__colored {
-  background-color: #9a2ca0;
+  background-color: #24A9F6;
   font-weight: 500;
   font-size: 35px;
   line-height: 32px;
@@ -117,10 +117,10 @@ a {
   
 
 .section__button__colored:hover {
-  color:#9a2ca0 !important;
+  color: #24A9F6 !important;
   background-color: white;
   background: transparent;
-    border: 1px solid #9a2ca0;
+    border: 1px solid #24A9F6;
     transition: all 1s ease;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
@@ -172,7 +172,7 @@ a {
   font-weight: bold;
   font-size: 25px;
   line-height: 37px;
-  color: #9a2ca0;
+  color: #24A9F6;
   margin: 0 32px;
 }
 
